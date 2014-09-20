@@ -328,6 +328,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Nwani";
 				TargetAttributes = {
+					02E5E52B19C7EAA3006B18A6 = {
+						DevelopmentTeam = QWH82XQ596;
+					};
 					02E5E55319C7EAA3006B18A6 = {
 						TestTargetID = 02E5E52B19C7EAA3006B18A6;
 					};

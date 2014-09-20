@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4726D4C2-75EF-48F2-9AA7-3C4D10DCDAA6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZombieConga</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D26AF7A81FC2CA794959B6CBD6070F2121E23485</key>
+		<string>https://github.com/michaelnwani/iOS_Games.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZombieConga/ZombieConga.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D26AF7A81FC2CA794959B6CBD6070F2121E23485</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/michaelnwani/iOS_Games.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D26AF7A81FC2CA794959B6CBD6070F2121E23485</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D26AF7A81FC2CA794959B6CBD6070F2121E23485</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_Games</string>
+		</dict>
+	</array>
+</dict>
+</plist>
