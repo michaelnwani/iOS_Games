@@ -12,6 +12,8 @@
 #import "SKTUtils.h"
 #import "OldTVNode.h"
 #import "Physics.h"
+#import "OldTimeyFilter.h"
+#import "CustomTransitionFilter.h"
 
 @interface MyScene()<SKPhysicsContactDelegate>
 @end
@@ -30,20 +32,20 @@
     SKSpriteNode *_ropeNode;
 }
 
--(id)initWithSize:(CGSize)size
+-(instancetype)initWithSize:(CGSize)size andLevelNumber:(int)currentLevel
 {
     self = [super initWithSize:size];
     
     if (self)
     {
         /* Setup your scene here */
-        [self initializeScene];
+        [self initializeSceneWithLevelNumber:currentLevel];
         
     }
     return self;
 }
 
--(void)initializeScene
+-(void)initializeSceneWithLevelNumber:(int)levelNumber
 {
     
     self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
@@ -69,12 +71,17 @@
     _gameNode = [SKNode node];
     [self addChild:_gameNode];
     
-    _currentLevel = 7;
+    _currentLevel = levelNumber;
     [self setupLevel:_currentLevel];
 //    [self createPhotoFrameWithPosition:CGPointMake(120, 220)];
     
 //    OldTVNode *tvNode = [[OldTVNode alloc] initWithRect:CGRectMake(100, 250, 100, 100)];
 //    [self addChild:tvNode];
+    
+//    self.filter = [[OldTimeyFilter alloc] init]; SUUUPEERRRRRR heavy
+//    self.shouldEnableEffects = YES;
+    
+    [self inGameMessage:[NSString stringWithFormat:@"Level %i", _currentLevel]];
 }
 
 -(void)didSimulatePhysics
@@ -414,9 +421,10 @@
 
 -(void)newGame
 {
-    [_gameNode removeAllChildren];
-    [self setupLevel:_currentLevel];
-    [self inGameMessage:[NSString stringWithFormat:@"Level %i", _currentLevel]];
+    SKScene *nextLevel = [[MyScene alloc] initWithSize:self.size andLevelNumber:_currentLevel];
+    SKTransition *levelTransition = [SKTransition transitionWithCIFilter:[[CustomTransitionFilter alloc] init] duration:1.0];
+    [self.view presentScene:nextLevel transition:levelTransition];
+    
 }
 
 -(void)lose

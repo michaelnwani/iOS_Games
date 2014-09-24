@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0299D04119D2680300C17E72 /* OldTVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0299D04019D2680300C17E72 /* OldTVNode.m */; };
+		02E5FF5B19D37A8A002692F3 /* OldTimeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E5FF5A19D37A8A002692F3 /* OldTimeyFilter.m */; };
+		02E5FF5E19D38712002692F3 /* CustomTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E5FF5D19D38712002692F3 /* CustomTransitionFilter.m */; };
 		02EE7BA419D0C99B00C2F4A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */; };
 		02EE7BA619D0C99B00C2F4A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA519D0C99B00C2F4A9 /* CoreGraphics.framework */; };
 		02EE7BA819D0C99B00C2F4A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA719D0C99B00C2F4A9 /* UIKit.framework */; };
@@ -66,6 +68,10 @@
 		0299D03F19D2680300C17E72 /* OldTVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldTVNode.h; sourceTree = "<group>"; };
 		0299D04019D2680300C17E72 /* OldTVNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldTVNode.m; sourceTree = "<group>"; };
 		0299D04219D26D2E00C17E72 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		02E5FF5919D37A8A002692F3 /* OldTimeyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldTimeyFilter.h; sourceTree = "<group>"; };
+		02E5FF5A19D37A8A002692F3 /* OldTimeyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldTimeyFilter.m; sourceTree = "<group>"; };
+		02E5FF5C19D38712002692F3 /* CustomTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionFilter.h; sourceTree = "<group>"; };
+		02E5FF5D19D38712002692F3 /* CustomTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionFilter.m; sourceTree = "<group>"; };
 		02EE7BA019D0C99B00C2F4A9 /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02EE7BA519D0C99B00C2F4A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,6 +201,10 @@
 				0299D03F19D2680300C17E72 /* OldTVNode.h */,
 				0299D04019D2680300C17E72 /* OldTVNode.m */,
 				0299D04219D26D2E00C17E72 /* Physics.h */,
+				02E5FF5919D37A8A002692F3 /* OldTimeyFilter.h */,
+				02E5FF5A19D37A8A002692F3 /* OldTimeyFilter.m */,
+				02E5FF5C19D38712002692F3 /* CustomTransitionFilter.h */,
+				02E5FF5D19D38712002692F3 /* CustomTransitionFilter.m */,
 				02EE7BC019D0C99B00C2F4A9 /* Spaceship.png */,
 				02EE7BC219D0C99B00C2F4A9 /* Images.xcassets */,
 				02EE7BAC19D0C99B00C2F4A9 /* Supporting Files */,
@@ -434,8 +444,10 @@
 			files = (
 				02EE7BFD19D0CBBD00C2F4A9 /* perlin.c in Sources */,
 				02EE7C1C19D0F3AF00C2F4A9 /* SKNode+SKTExtras.m in Sources */,
+				02E5FF5B19D37A8A002692F3 /* OldTimeyFilter.m in Sources */,
 				02EE7BBF19D0C99B00C2F4A9 /* MyScene.m in Sources */,
 				02EE7C0E19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m in Sources */,
+				02E5FF5E19D38712002692F3 /* CustomTransitionFilter.m in Sources */,
 				02EE7C1E19D0F3AF00C2F4A9 /* SKTUtils.mm in Sources */,
 				02EE7C1A19D0F3AF00C2F4A9 /* SKAction+SKTExtras.m in Sources */,
 				02EE7BBC19D0C99B00C2F4A9 /* ViewController.m in Sources */,

@@ -20,4 +20,6 @@
 
 -(void)setPhotoTexture:(SKTexture *)texture;
 
+-(instancetype)initWithSize:(CGSize)size andLevelNumber:(int)currentLevel;
+
 @end

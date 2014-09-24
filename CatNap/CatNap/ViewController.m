@@ -27,13 +27,20 @@
         skView.showsNodeCount = YES;
         
         // Create and configure the scene.
-        MyScene *scene = [MyScene sceneWithSize:skView.bounds.size];
+        MyScene *scene = [[MyScene alloc] initWithSize:skView.bounds.size andLevelNumber:1];
         scene.delegate = self;
         
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
         // Present the scene.
         [skView presentScene:scene];
+        
+        NSArray *ciFilters = [CIFilter filterNamesInCategory:kCICategoryBuiltIn];
+        for (NSString *filter in ciFilters)
+        {
+            NSLog(@"filter name %@", filter);
+            NSLog(@"filter %@", [[CIFilter filterWithName:filter] attributes]);
+        }
     }
     
 }
@@ -80,7 +87,14 @@
         //4
         SKView *view = (SKView *)self.view;
         MyScene *currentScene = (MyScene *)[view scene];
-        //Place core image code here
+
+        //1
+        CIFilter *sepia = [CIFilter filterWithName:@"CISepiaTone"];
+        //2
+        [sepia setValue:@(0.8) forKey:@"inputIntensity"];
+        //3
+        imageTexture = [imageTexture textureByApplyingCIFilter:sepia];
+        
         [currentScene setPhotoTexture:imageTexture];
     }];
 }
