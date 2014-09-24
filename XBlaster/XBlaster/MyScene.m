@@ -4,6 +4,7 @@
 #import "Bullet.h"
 #import "EnemyA.h"
 #import "EnemyB.h"
+#import "SKTAudio.h"
 
 @implementation MyScene {
     SKAction *_scoreFlashAction;
@@ -20,6 +21,8 @@
     SKLabelNode *_tapScreenLabel;
     CGFloat _score;
     int _gameState;
+    SKAction *_laserSound;
+    SKAction *_explodeSound;
 }
 
 -(id)initWithSize:(CGSize)size {
@@ -31,23 +34,53 @@
         [self setupSceneLayers];
         [self setupUI];
         [self setupEntities];
+        [[SKTAudio sharedInstance] playBackgroundMusic:@"bgMusic.mp3"];
+        _laserSound = [SKAction playSoundFileNamed:@"laser.wav" waitForCompletion:NO];
+        _explodeSound = [SKAction playSoundFileNamed:@"explode.wav" waitForCompletion:NO];
     }
     return self;
 }
 
 - (void)setupSceneLayers
 {
+    SKNode *starfieldNode = [SKNode node];
+    starfieldNode.name = @"starfieldNode";
+    
+    [starfieldNode addChild:[self starfieldEmitterNodeWithSpeed:-10
+                                                       lifetime:(self.frame.size.height/5)
+                                                          scale:0.10
+                                                      birthRate:5
+                                                          color:[SKColor darkGrayColor]]];
+    
+    [starfieldNode addChild:[self starfieldEmitterNodeWithSpeed:-16
+                                                       lifetime:(self.frame.size.height/10)
+                                                          scale:0.14
+                                                      birthRate:2
+                                                          color:[SKColor grayColor]]];
+    
+    [starfieldNode addChild:[self starfieldEmitterNodeWithSpeed:-24
+                                                       lifetime:(self.frame.size.height / 23)
+                                                          scale:0.2
+                                                      birthRate:1
+                                                          color:[SKColor lightGrayColor]]];
+    [self addChild:starfieldNode];
+    
+    
     _playerLayerNode = [SKNode node];
     [self addChild:_playerLayerNode];
     
     _hudLayerNode = [SKNode node];
     [self addChild:_hudLayerNode];
     
+    _particleLayerNode = [SKNode node];
+    [self addChild:_particleLayerNode];
+    
     _bulletLayerNode = [SKNode node];
     [self addChild:_bulletLayerNode];
     
     _enemyLayerNode = [SKNode node];
     [self addChild:_enemyLayerNode];
+
 }
 
 - (void)setupUI
@@ -243,6 +276,7 @@
                 
                 Bullet *bullet = [[Bullet alloc] initWithPosition:_playerShip.position];
                 [_bulletLayerNode addChild:bullet];
+                [self playLaserSound];
                 [bullet runAction:[SKAction sequence:@[
                                                        [SKAction moveByX:0 y:self.size.height duration:0.5],
                                                        [SKAction removeFromParent]
@@ -347,6 +381,66 @@
         [(Entity*)node collidedWith:contact.bodyA contact:contact];
     }
     
+}
+
+-(SKEmitterNode *)starfieldEmitterNodeWithSpeed:(float)speed
+                                       lifetime:(float)lifetime scale:(float)scale
+                                      birthRate:(float)birthRate color:(SKColor *)color
+{
+    SKLabelNode *star = [SKLabelNode labelNodeWithFontNamed:@"Helvetica"];
+    star.fontSize = 80.0f;
+    star.text = @"✦";
+    
+    SKTexture *texture;
+    SKView *textureView = [SKView new];
+    texture = [textureView textureFromNode:star];
+    texture.filteringMode = SKTextureFilteringNearest;
+    
+    SKEmitterNode *emitterNode = [SKEmitterNode new];
+    emitterNode.particleTexture = texture;
+    emitterNode.particleBirthRate = birthRate;
+    emitterNode.particleColor = color;
+    emitterNode.particleLifetime = lifetime;
+    emitterNode.particleSpeed = speed;
+    emitterNode.particleScale = scale;
+    emitterNode.particleColorBlendFactor = 1;
+    emitterNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMaxY(self.frame));
+    emitterNode.particlePositionRange = CGVectorMake(CGRectGetMaxX(self.frame), 0);
+//    emitterNode.emissionAngle = M_PI_4; 45 degree angle clockwise, from the 6 o'clock position
+    emitterNode.particleSpeedRange = 16.0;
+    
+    //1
+    float twinkles = 20;
+    SKKeyframeSequence *colorSequence = [[SKKeyframeSequence alloc] initWithCapacity:twinkles*2];
+    //2
+    float twinkleTime = 1.0/twinkles;
+    for (int i = 0; i < twinkles; i++)
+    {
+        //3; Capacity is the capacity of keyframes (40). multiply that by time to get the time that the key frame value will be executed. we're doing two key frames twenty times each, therefore that meets the capacity of 40
+        [colorSequence addKeyframeValue:[SKColor whiteColor] time:((i*2)*twinkleTime/2)];
+        [colorSequence addKeyframeValue:[SKColor yellowColor] time:((i*2+1)*(twinkleTime/2))];
+    }
+    //4
+    emitterNode.particleColorSequence = colorSequence;
+    
+    [emitterNode advanceSimulationTime:lifetime];
+    emitterNode.particleAction = [SKAction repeatActionForever:
+                                  [SKAction sequence:@[
+                                                       [SKAction rotateToAngle:-M_PI_4 duration:1],
+                                                       [SKAction rotateToAngle:M_PI_4 duration:1], //dont forget comma
+                                                       ]
+                                   ]];
+    return emitterNode;
+}
+
+-(void)playExplodeSound
+{
+    [self runAction:_explodeSound];
+}
+
+-(void)playLaserSound
+{
+    [self runAction:_laserSound];
 }
 
 @end

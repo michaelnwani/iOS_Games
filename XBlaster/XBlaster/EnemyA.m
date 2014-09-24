@@ -114,6 +114,7 @@ static SKAction *scoreLabelAction = nil;
         [EnemyA loadSharedAssets];
         
         [self configureCollisionBody];
+        _deathEmitter = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"enemyDeath" ofType:@"sks"]];
         
     }
     return self;
@@ -214,6 +215,13 @@ static SKAction *scoreLabelAction = nil;
         [_scoreLabel removeAllActions];
         [_scoreLabel runAction:scoreLabelAction];
         
+        _deathEmitter.position = self.position;
+        if (!_deathEmitter.parent)
+        {
+            [mainScene.particleLayerNode addChild:_deathEmitter];
+        }
+        [_deathEmitter resetSimulation]; //removes all existing particles and restarts the simulation
+        [mainScene playExplodeSound];
         // Now position the entity above the top of the screen so it can fly into view
         self.position = CGPointMake(RandomFloatRange(100, self.scene.size.width - 100),
                                     self.scene.size.height + 50);

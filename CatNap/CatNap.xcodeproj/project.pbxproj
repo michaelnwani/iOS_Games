@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0299D04119D2680300C17E72 /* OldTVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0299D04019D2680300C17E72 /* OldTVNode.m */; };
+		02EE7BA419D0C99B00C2F4A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */; };
+		02EE7BA619D0C99B00C2F4A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA519D0C99B00C2F4A9 /* CoreGraphics.framework */; };
+		02EE7BA819D0C99B00C2F4A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA719D0C99B00C2F4A9 /* UIKit.framework */; };
+		02EE7BAA19D0C99B00C2F4A9 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA919D0C99B00C2F4A9 /* SpriteKit.framework */; };
+		02EE7BB019D0C99B00C2F4A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BAE19D0C99B00C2F4A9 /* InfoPlist.strings */; };
+		02EE7BB219D0C99B00C2F4A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BB119D0C99B00C2F4A9 /* main.m */; };
+		02EE7BB619D0C99B00C2F4A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BB519D0C99B00C2F4A9 /* AppDelegate.m */; };
+		02EE7BB919D0C99B00C2F4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BB719D0C99B00C2F4A9 /* Main.storyboard */; };
+		02EE7BBC19D0C99B00C2F4A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BBB19D0C99B00C2F4A9 /* ViewController.m */; };
+		02EE7BBF19D0C99B00C2F4A9 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BBE19D0C99B00C2F4A9 /* MyScene.m */; };
+		02EE7BC119D0C99B00C2F4A9 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BC019D0C99B00C2F4A9 /* Spaceship.png */; };
+		02EE7BC319D0C99B00C2F4A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BC219D0C99B00C2F4A9 /* Images.xcassets */; };
+		02EE7BCA19D0C99B00C2F4A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BC919D0C99B00C2F4A9 /* XCTest.framework */; };
+		02EE7BCB19D0C99B00C2F4A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */; };
+		02EE7BCC19D0C99B00C2F4A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EE7BA719D0C99B00C2F4A9 /* UIKit.framework */; };
+		02EE7BD419D0C99B00C2F4A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BD219D0C99B00C2F4A9 /* InfoPlist.strings */; };
+		02EE7BD619D0C99B00C2F4A9 /* CatNapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BD519D0C99B00C2F4A9 /* CatNapTests.m */; };
+		02EE7BF919D0CBBD00C2F4A9 /* background-desat.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BE119D0CBBC00C2F4A9 /* background-desat.png */; };
+		02EE7BFA19D0CBBD00C2F4A9 /* background-desat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BE219D0CBBC00C2F4A9 /* background-desat@2x.png */; };
+		02EE7BFB19D0CBBD00C2F4A9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BE319D0CBBC00C2F4A9 /* background.png */; };
+		02EE7BFC19D0CBBD00C2F4A9 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BE419D0CBBC00C2F4A9 /* background@2x.png */; };
+		02EE7BFD19D0CBBD00C2F4A9 /* perlin.c in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7BE619D0CBBC00C2F4A9 /* perlin.c */; };
+		02EE7BFE19D0CBBD00C2F4A9 /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BE919D0CBBC00C2F4A9 /* level1.plist */; };
+		02EE7BFF19D0CBBD00C2F4A9 /* level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BEA19D0CBBC00C2F4A9 /* level2.plist */; };
+		02EE7C0019D0CBBD00C2F4A9 /* level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BEB19D0CBBC00C2F4A9 /* level3.plist */; };
+		02EE7C0119D0CBBD00C2F4A9 /* level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BEC19D0CBBC00C2F4A9 /* level4.plist */; };
+		02EE7C0219D0CBBD00C2F4A9 /* level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BED19D0CBBC00C2F4A9 /* level5.plist */; };
+		02EE7C0319D0CBBD00C2F4A9 /* level6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BEE19D0CBBC00C2F4A9 /* level6.plist */; };
+		02EE7C0419D0CBBD00C2F4A9 /* level7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BEF19D0CBBC00C2F4A9 /* level7.plist */; };
+		02EE7C0519D0CBBD00C2F4A9 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF119D0CBBC00C2F4A9 /* bgMusic.mp3 */; };
+		02EE7C0619D0CBBD00C2F4A9 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF219D0CBBC00C2F4A9 /* lose.mp3 */; };
+		02EE7C0719D0CBBD00C2F4A9 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF319D0CBBC00C2F4A9 /* pop.mp3 */; };
+		02EE7C0819D0CBBD00C2F4A9 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF419D0CBBC00C2F4A9 /* win.mp3 */; };
+		02EE7C0919D0CBBD00C2F4A9 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF519D0CBBC00C2F4A9 /* sprites.atlas */; };
+		02EE7C0A19D0CBBD00C2F4A9 /* BookTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF719D0CBBD00C2F4A9 /* BookTrailer.m4v */; };
+		02EE7C0B19D0CBBD00C2F4A9 /* loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 02EE7BF819D0CBBD00C2F4A9 /* loop.mov */; };
+		02EE7C0E19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C0D19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m */; };
+		02EE7C1A19D0F3AF00C2F4A9 /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C1119D0F3AF00C2F4A9 /* SKAction+SKTExtras.m */; };
+		02EE7C1B19D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C1319D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.m */; };
+		02EE7C1C19D0F3AF00C2F4A9 /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C1519D0F3AF00C2F4A9 /* SKNode+SKTExtras.m */; };
+		02EE7C1D19D0F3AF00C2F4A9 /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C1719D0F3AF00C2F4A9 /* SKTAudio.m */; };
+		02EE7C1E19D0F3AF00C2F4A9 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 02EE7C1919D0F3AF00C2F4A9 /* SKTUtils.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02EE7BCD19D0C99B00C2F4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02EE7B9819D0C99B00C2F4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02EE7B9F19D0C99B00C2F4A9;
+			remoteInfo = CatNap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0299D03F19D2680300C17E72 /* OldTVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldTVNode.h; sourceTree = "<group>"; };
+		0299D04019D2680300C17E72 /* OldTVNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldTVNode.m; sourceTree = "<group>"; };
+		0299D04219D26D2E00C17E72 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		02EE7BA019D0C99B00C2F4A9 /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02EE7BA519D0C99B00C2F4A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02EE7BA719D0C99B00C2F4A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02EE7BA919D0C99B00C2F4A9 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		02EE7BAD19D0C99B00C2F4A9 /* CatNap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatNap-Info.plist"; sourceTree = "<group>"; };
+		02EE7BAF19D0C99B00C2F4A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02EE7BB119D0C99B00C2F4A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02EE7BB319D0C99B00C2F4A9 /* CatNap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatNap-Prefix.pch"; sourceTree = "<group>"; };
+		02EE7BB419D0C99B00C2F4A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02EE7BB519D0C99B00C2F4A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02EE7BB819D0C99B00C2F4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02EE7BBA19D0C99B00C2F4A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		02EE7BBB19D0C99B00C2F4A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		02EE7BBD19D0C99B00C2F4A9 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		02EE7BBE19D0C99B00C2F4A9 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		02EE7BC019D0C99B00C2F4A9 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		02EE7BC219D0C99B00C2F4A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02EE7BC819D0C99B00C2F4A9 /* CatNapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatNapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EE7BC919D0C99B00C2F4A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		02EE7BD119D0C99B00C2F4A9 /* CatNapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatNapTests-Info.plist"; sourceTree = "<group>"; };
+		02EE7BD319D0C99B00C2F4A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02EE7BD519D0C99B00C2F4A9 /* CatNapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatNapTests.m; sourceTree = "<group>"; };
+		02EE7BE119D0CBBC00C2F4A9 /* background-desat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat.png"; sourceTree = "<group>"; };
+		02EE7BE219D0CBBC00C2F4A9 /* background-desat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat@2x.png"; sourceTree = "<group>"; };
+		02EE7BE319D0CBBC00C2F4A9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		02EE7BE419D0CBBC00C2F4A9 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		02EE7BE619D0CBBC00C2F4A9 /* perlin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = perlin.c; sourceTree = "<group>"; };
+		02EE7BE719D0CBBC00C2F4A9 /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin.h; sourceTree = "<group>"; };
+		02EE7BE919D0CBBC00C2F4A9 /* level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level1.plist; sourceTree = "<group>"; };
+		02EE7BEA19D0CBBC00C2F4A9 /* level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level2.plist; sourceTree = "<group>"; };
+		02EE7BEB19D0CBBC00C2F4A9 /* level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level3.plist; sourceTree = "<group>"; };
+		02EE7BEC19D0CBBC00C2F4A9 /* level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level4.plist; sourceTree = "<group>"; };
+		02EE7BED19D0CBBC00C2F4A9 /* level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level5.plist; sourceTree = "<group>"; };
+		02EE7BEE19D0CBBC00C2F4A9 /* level6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level6.plist; sourceTree = "<group>"; };
+		02EE7BEF19D0CBBC00C2F4A9 /* level7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level7.plist; sourceTree = "<group>"; };
+		02EE7BF119D0CBBC00C2F4A9 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		02EE7BF219D0CBBC00C2F4A9 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		02EE7BF319D0CBBC00C2F4A9 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		02EE7BF419D0CBBC00C2F4A9 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		02EE7BF519D0CBBC00C2F4A9 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		02EE7BF719D0CBBD00C2F4A9 /* BookTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = BookTrailer.m4v; sourceTree = "<group>"; };
+		02EE7BF819D0CBBD00C2F4A9 /* loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loop.mov; sourceTree = "<group>"; };
+		02EE7C0C19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteNode+DebugDraw.h"; sourceTree = "<group>"; };
+		02EE7C0D19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteNode+DebugDraw.m"; sourceTree = "<group>"; };
+		02EE7C1019D0F3AF00C2F4A9 /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		02EE7C1119D0F3AF00C2F4A9 /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		02EE7C1219D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		02EE7C1319D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		02EE7C1419D0F3AF00C2F4A9 /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		02EE7C1519D0F3AF00C2F4A9 /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		02EE7C1619D0F3AF00C2F4A9 /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		02EE7C1719D0F3AF00C2F4A9 /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		02EE7C1819D0F3AF00C2F4A9 /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		02EE7C1919D0F3AF00C2F4A9 /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02EE7B9D19D0C99B00C2F4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BA619D0C99B00C2F4A9 /* CoreGraphics.framework in Frameworks */,
+				02EE7BA819D0C99B00C2F4A9 /* UIKit.framework in Frameworks */,
+				02EE7BAA19D0C99B00C2F4A9 /* SpriteKit.framework in Frameworks */,
+				02EE7BA419D0C99B00C2F4A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EE7BC519D0C99B00C2F4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BCA19D0C99B00C2F4A9 /* XCTest.framework in Frameworks */,
+				02EE7BCC19D0C99B00C2F4A9 /* UIKit.framework in Frameworks */,
+				02EE7BCB19D0C99B00C2F4A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02EE7B9719D0C99B00C2F4A9 = {
+			isa = PBXGroup;
+			children = (
+				02EE7BAB19D0C99B00C2F4A9 /* CatNap */,
+				02EE7BCF19D0C99B00C2F4A9 /* CatNapTests */,
+				02EE7BA219D0C99B00C2F4A9 /* Frameworks */,
+				02EE7BA119D0C99B00C2F4A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02EE7BA119D0C99B00C2F4A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BA019D0C99B00C2F4A9 /* CatNap.app */,
+				02EE7BC819D0C99B00C2F4A9 /* CatNapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02EE7BA219D0C99B00C2F4A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BA319D0C99B00C2F4A9 /* Foundation.framework */,
+				02EE7BA519D0C99B00C2F4A9 /* CoreGraphics.framework */,
+				02EE7BA719D0C99B00C2F4A9 /* UIKit.framework */,
+				02EE7BA919D0C99B00C2F4A9 /* SpriteKit.framework */,
+				02EE7BC919D0C99B00C2F4A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02EE7BAB19D0C99B00C2F4A9 /* CatNap */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BDF19D0CBBC00C2F4A9 /* Art */,
+				02EE7BB419D0C99B00C2F4A9 /* AppDelegate.h */,
+				02EE7BB519D0C99B00C2F4A9 /* AppDelegate.m */,
+				02EE7BB719D0C99B00C2F4A9 /* Main.storyboard */,
+				02EE7BBA19D0C99B00C2F4A9 /* ViewController.h */,
+				02EE7BBB19D0C99B00C2F4A9 /* ViewController.m */,
+				02EE7BBD19D0C99B00C2F4A9 /* MyScene.h */,
+				02EE7BBE19D0C99B00C2F4A9 /* MyScene.m */,
+				02EE7C0C19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.h */,
+				02EE7C0D19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m */,
+				0299D03F19D2680300C17E72 /* OldTVNode.h */,
+				0299D04019D2680300C17E72 /* OldTVNode.m */,
+				0299D04219D26D2E00C17E72 /* Physics.h */,
+				02EE7BC019D0C99B00C2F4A9 /* Spaceship.png */,
+				02EE7BC219D0C99B00C2F4A9 /* Images.xcassets */,
+				02EE7BAC19D0C99B00C2F4A9 /* Supporting Files */,
+			);
+			path = CatNap;
+			sourceTree = "<group>";
+		};
+		02EE7BAC19D0C99B00C2F4A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BAD19D0C99B00C2F4A9 /* CatNap-Info.plist */,
+				02EE7BAE19D0C99B00C2F4A9 /* InfoPlist.strings */,
+				02EE7BB119D0C99B00C2F4A9 /* main.m */,
+				02EE7BB319D0C99B00C2F4A9 /* CatNap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02EE7BCF19D0C99B00C2F4A9 /* CatNapTests */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BD519D0C99B00C2F4A9 /* CatNapTests.m */,
+				02EE7BD019D0C99B00C2F4A9 /* Supporting Files */,
+			);
+			path = CatNapTests;
+			sourceTree = "<group>";
+		};
+		02EE7BD019D0C99B00C2F4A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BD119D0C99B00C2F4A9 /* CatNapTests-Info.plist */,
+				02EE7BD219D0C99B00C2F4A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02EE7BDF19D0CBBC00C2F4A9 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7C0F19D0F3AF00C2F4A9 /* SKTUtils */,
+				02EE7BE019D0CBBC00C2F4A9 /* Backgrounds */,
+				02EE7BE519D0CBBC00C2F4A9 /* Code */,
+				02EE7BE819D0CBBC00C2F4A9 /* Levels */,
+				02EE7BF019D0CBBC00C2F4A9 /* Sounds */,
+				02EE7BF519D0CBBC00C2F4A9 /* sprites.atlas */,
+				02EE7BF619D0CBBC00C2F4A9 /* Videos */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		02EE7BE019D0CBBC00C2F4A9 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BE119D0CBBC00C2F4A9 /* background-desat.png */,
+				02EE7BE219D0CBBC00C2F4A9 /* background-desat@2x.png */,
+				02EE7BE319D0CBBC00C2F4A9 /* background.png */,
+				02EE7BE419D0CBBC00C2F4A9 /* background@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		02EE7BE519D0CBBC00C2F4A9 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BE619D0CBBC00C2F4A9 /* perlin.c */,
+				02EE7BE719D0CBBC00C2F4A9 /* perlin.h */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		02EE7BE819D0CBBC00C2F4A9 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BE919D0CBBC00C2F4A9 /* level1.plist */,
+				02EE7BEA19D0CBBC00C2F4A9 /* level2.plist */,
+				02EE7BEB19D0CBBC00C2F4A9 /* level3.plist */,
+				02EE7BEC19D0CBBC00C2F4A9 /* level4.plist */,
+				02EE7BED19D0CBBC00C2F4A9 /* level5.plist */,
+				02EE7BEE19D0CBBC00C2F4A9 /* level6.plist */,
+				02EE7BEF19D0CBBC00C2F4A9 /* level7.plist */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		02EE7BF019D0CBBC00C2F4A9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BF119D0CBBC00C2F4A9 /* bgMusic.mp3 */,
+				02EE7BF219D0CBBC00C2F4A9 /* lose.mp3 */,
+				02EE7BF319D0CBBC00C2F4A9 /* pop.mp3 */,
+				02EE7BF419D0CBBC00C2F4A9 /* win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		02EE7BF619D0CBBC00C2F4A9 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7BF719D0CBBD00C2F4A9 /* BookTrailer.m4v */,
+				02EE7BF819D0CBBD00C2F4A9 /* loop.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		02EE7C0F19D0F3AF00C2F4A9 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				02EE7C1019D0F3AF00C2F4A9 /* SKAction+SKTExtras.h */,
+				02EE7C1119D0F3AF00C2F4A9 /* SKAction+SKTExtras.m */,
+				02EE7C1219D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.h */,
+				02EE7C1319D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.m */,
+				02EE7C1419D0F3AF00C2F4A9 /* SKNode+SKTExtras.h */,
+				02EE7C1519D0F3AF00C2F4A9 /* SKNode+SKTExtras.m */,
+				02EE7C1619D0F3AF00C2F4A9 /* SKTAudio.h */,
+				02EE7C1719D0F3AF00C2F4A9 /* SKTAudio.m */,
+				02EE7C1819D0F3AF00C2F4A9 /* SKTUtils.h */,
+				02EE7C1919D0F3AF00C2F4A9 /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02EE7B9F19D0C99B00C2F4A9 /* CatNap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EE7BD919D0C99B00C2F4A9 /* Build configuration list for PBXNativeTarget "CatNap" */;
+			buildPhases = (
+				02EE7B9C19D0C99B00C2F4A9 /* Sources */,
+				02EE7B9D19D0C99B00C2F4A9 /* Frameworks */,
+				02EE7B9E19D0C99B00C2F4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatNap;
+			productName = CatNap;
+			productReference = 02EE7BA019D0C99B00C2F4A9 /* CatNap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02EE7BC719D0C99B00C2F4A9 /* CatNapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EE7BDC19D0C99B00C2F4A9 /* Build configuration list for PBXNativeTarget "CatNapTests" */;
+			buildPhases = (
+				02EE7BC419D0C99B00C2F4A9 /* Sources */,
+				02EE7BC519D0C99B00C2F4A9 /* Frameworks */,
+				02EE7BC619D0C99B00C2F4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02EE7BCE19D0C99B00C2F4A9 /* PBXTargetDependency */,
+			);
+			name = CatNapTests;
+			productName = CatNapTests;
+			productReference = 02EE7BC819D0C99B00C2F4A9 /* CatNapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02EE7B9819D0C99B00C2F4A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Michael Nwani";
+				TargetAttributes = {
+					02EE7BC719D0C99B00C2F4A9 = {
+						TestTargetID = 02EE7B9F19D0C99B00C2F4A9;
+					};
+				};
+			};
+			buildConfigurationList = 02EE7B9B19D0C99B00C2F4A9 /* Build configuration list for PBXProject "CatNap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02EE7B9719D0C99B00C2F4A9;
+			productRefGroup = 02EE7BA119D0C99B00C2F4A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02EE7B9F19D0C99B00C2F4A9 /* CatNap */,
+				02EE7BC719D0C99B00C2F4A9 /* CatNapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02EE7B9E19D0C99B00C2F4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BB019D0C99B00C2F4A9 /* InfoPlist.strings in Resources */,
+				02EE7BF919D0CBBD00C2F4A9 /* background-desat.png in Resources */,
+				02EE7C0A19D0CBBD00C2F4A9 /* BookTrailer.m4v in Resources */,
+				02EE7BFF19D0CBBD00C2F4A9 /* level2.plist in Resources */,
+				02EE7C0519D0CBBD00C2F4A9 /* bgMusic.mp3 in Resources */,
+				02EE7BFB19D0CBBD00C2F4A9 /* background.png in Resources */,
+				02EE7BFE19D0CBBD00C2F4A9 /* level1.plist in Resources */,
+				02EE7BFA19D0CBBD00C2F4A9 /* background-desat@2x.png in Resources */,
+				02EE7C0119D0CBBD00C2F4A9 /* level4.plist in Resources */,
+				02EE7C0019D0CBBD00C2F4A9 /* level3.plist in Resources */,
+				02EE7C0319D0CBBD00C2F4A9 /* level6.plist in Resources */,
+				02EE7C0919D0CBBD00C2F4A9 /* sprites.atlas in Resources */,
+				02EE7BC319D0C99B00C2F4A9 /* Images.xcassets in Resources */,
+				02EE7BC119D0C99B00C2F4A9 /* Spaceship.png in Resources */,
+				02EE7C0719D0CBBD00C2F4A9 /* pop.mp3 in Resources */,
+				02EE7C0819D0CBBD00C2F4A9 /* win.mp3 in Resources */,
+				02EE7BFC19D0CBBD00C2F4A9 /* background@2x.png in Resources */,
+				02EE7C0419D0CBBD00C2F4A9 /* level7.plist in Resources */,
+				02EE7C0B19D0CBBD00C2F4A9 /* loop.mov in Resources */,
+				02EE7C0219D0CBBD00C2F4A9 /* level5.plist in Resources */,
+				02EE7BB919D0C99B00C2F4A9 /* Main.storyboard in Resources */,
+				02EE7C0619D0CBBD00C2F4A9 /* lose.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EE7BC619D0C99B00C2F4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BD419D0C99B00C2F4A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02EE7B9C19D0C99B00C2F4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BFD19D0CBBD00C2F4A9 /* perlin.c in Sources */,
+				02EE7C1C19D0F3AF00C2F4A9 /* SKNode+SKTExtras.m in Sources */,
+				02EE7BBF19D0C99B00C2F4A9 /* MyScene.m in Sources */,
+				02EE7C0E19D0EAC400C2F4A9 /* SKSpriteNode+DebugDraw.m in Sources */,
+				02EE7C1E19D0F3AF00C2F4A9 /* SKTUtils.mm in Sources */,
+				02EE7C1A19D0F3AF00C2F4A9 /* SKAction+SKTExtras.m in Sources */,
+				02EE7BBC19D0C99B00C2F4A9 /* ViewController.m in Sources */,
+				02EE7BB619D0C99B00C2F4A9 /* AppDelegate.m in Sources */,
+				02EE7C1B19D0F3AF00C2F4A9 /* SKEmitterNode+SKTExtras.m in Sources */,
+				0299D04119D2680300C17E72 /* OldTVNode.m in Sources */,
+				02EE7BB219D0C99B00C2F4A9 /* main.m in Sources */,
+				02EE7C1D19D0F3AF00C2F4A9 /* SKTAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EE7BC419D0C99B00C2F4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE7BD619D0C99B00C2F4A9 /* CatNapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02EE7BCE19D0C99B00C2F4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02EE7B9F19D0C99B00C2F4A9 /* CatNap */;
+			targetProxy = 02EE7BCD19D0C99B00C2F4A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02EE7BAE19D0C99B00C2F4A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EE7BAF19D0C99B00C2F4A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02EE7BB719D0C99B00C2F4A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EE7BB819D0C99B00C2F4A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02EE7BD219D0C99B00C2F4A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EE7BD319D0C99B00C2F4A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02EE7BD719D0C99B00C2F4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02EE7BD819D0C99B00C2F4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02EE7BDA19D0C99B00C2F4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNap/CatNap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02EE7BDB19D0C99B00C2F4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNap/CatNap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		02EE7BDD19D0C99B00C2F4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CatNap.app/CatNap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CatNapTests/CatNapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		02EE7BDE19D0C99B00C2F4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CatNap.app/CatNap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatNap/CatNap-Prefix.pch";
+				INFOPLIST_FILE = "CatNapTests/CatNapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02EE7B9B19D0C99B00C2F4A9 /* Build configuration list for PBXProject "CatNap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EE7BD719D0C99B00C2F4A9 /* Debug */,
+				02EE7BD819D0C99B00C2F4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EE7BD919D0C99B00C2F4A9 /* Build configuration list for PBXNativeTarget "CatNap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EE7BDA19D0C99B00C2F4A9 /* Debug */,
+				02EE7BDB19D0C99B00C2F4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EE7BDC19D0C99B00C2F4A9 /* Build configuration list for PBXNativeTarget "CatNapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EE7BDD19D0C99B00C2F4A9 /* Debug */,
+				02EE7BDE19D0C99B00C2F4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02EE7B9819D0C99B00C2F4A9 /* Project object */;
+}

@@ -12,7 +12,9 @@ typedef enum : int {
 @property (nonatomic, strong) SKNode *hudLayerNode;
 @property (nonatomic, strong) SKNode *bulletLayerNode;
 @property (nonatomic, strong) SKNode *enemyLayerNode;
+@property (nonatomic, strong) SKNode *particleLayerNode;
 
 - (void)increaseScoreBy:(float)increment;
-
+-(void)playExplodeSound;
+-(void)playLaserSound;
 @end

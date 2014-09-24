@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025D111219CF4DCE000B8252 /* enemyDeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025D111119CF4DCE000B8252 /* enemyDeath.sks */; };
+		025D111719CF5521000B8252 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 025D111419CF5521000B8252 /* bgMusic.mp3 */; };
+		025D111819CF5521000B8252 /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 025D111519CF5521000B8252 /* explode.wav */; };
+		025D111919CF5521000B8252 /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = 025D111619CF5521000B8252 /* laser.wav */; };
 		02B34EE819CD366000451B8A /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EE719CD366000451B8A /* Entity.m */; };
 		02B34EEB19CD406500451B8A /* PlayerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EEA19CD406500451B8A /* PlayerShip.m */; };
 		02B34EEE19CD4B2800451B8A /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EED19CD4B2800451B8A /* Bullet.m */; };
 		02B34EF119CD4C2300451B8A /* EnemyA.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EF019CD4C2300451B8A /* EnemyA.m */; };
 		02B34EF419CD4CE500451B8A /* AISteering.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EF319CD4CE500451B8A /* AISteering.m */; };
 		02B34EF719CD4D3B00451B8A /* EnemyB.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B34EF619CD4D3B00451B8A /* EnemyB.m */; };
+		02DE9B6519CF356900268F4D /* engine.sks in Resources */ = {isa = PBXBuildFile; fileRef = 02DE9B6319CF356900268F4D /* engine.sks */; };
+		02DE9B6619CF356900268F4D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 02DE9B6419CF356900268F4D /* spark.png */; };
 		02E2EA5A19CBCFA5002168EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E2EA5919CBCFA5002168EB /* Foundation.framework */; };
 		02E2EA5C19CBCFA5002168EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E2EA5B19CBCFA5002168EB /* CoreGraphics.framework */; };
 		02E2EA5E19CBCFA5002168EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E2EA5D19CBCFA5002168EB /* UIKit.framework */; };
@@ -49,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025D111119CF4DCE000B8252 /* enemyDeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = enemyDeath.sks; sourceTree = "<group>"; };
+		025D111419CF5521000B8252 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		025D111519CF5521000B8252 /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
+		025D111619CF5521000B8252 /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
 		02B34EE619CD366000451B8A /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		02B34EE719CD366000451B8A /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		02B34EE919CD406500451B8A /* PlayerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerShip.h; sourceTree = "<group>"; };
@@ -61,6 +71,8 @@
 		02B34EF319CD4CE500451B8A /* AISteering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISteering.m; sourceTree = "<group>"; };
 		02B34EF519CD4D3B00451B8A /* EnemyB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyB.h; sourceTree = "<group>"; };
 		02B34EF619CD4D3B00451B8A /* EnemyB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyB.m; sourceTree = "<group>"; };
+		02DE9B6319CF356900268F4D /* engine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = engine.sks; sourceTree = "<group>"; };
+		02DE9B6419CF356900268F4D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		02E2EA5619CBCFA5002168EB /* XBlaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBlaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E2EA5919CBCFA5002168EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02E2EA5B19CBCFA5002168EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,6 +153,26 @@
 			name = Entities;
 			sourceTree = "<group>";
 		};
+		025D111319CF5521000B8252 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				025D111419CF5521000B8252 /* bgMusic.mp3 */,
+				025D111519CF5521000B8252 /* explode.wav */,
+				025D111619CF5521000B8252 /* laser.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		02DE9B6219CF34A400268F4D /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				02DE9B6319CF356900268F4D /* engine.sks */,
+				02DE9B6419CF356900268F4D /* spark.png */,
+				025D111119CF4DCE000B8252 /* enemyDeath.sks */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
 		02E2EA4D19CBCFA5002168EB = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +207,8 @@
 		02E2EA6119CBCFA5002168EB /* XBlaster */ = {
 			isa = PBXGroup;
 			children = (
+				025D111319CF5521000B8252 /* Sounds */,
+				02DE9B6219CF34A400268F4D /* Particles */,
 				02086F0F19CD0ED600015143 /* Entities */,
 				02E2EA6A19CBCFA5002168EB /* AppDelegate.h */,
 				02E2EA6B19CBCFA5002168EB /* AppDelegate.m */,
@@ -331,7 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E2EA9819CBD0AD002168EB /* thirteen_pixel_fonts.ttf in Resources */,
+				025D111219CF4DCE000B8252 /* enemyDeath.sks in Resources */,
+				025D111719CF5521000B8252 /* bgMusic.mp3 in Resources */,
+				02DE9B6519CF356900268F4D /* engine.sks in Resources */,
+				025D111819CF5521000B8252 /* explode.wav in Resources */,
 				02E2EA6619CBCFA5002168EB /* InfoPlist.strings in Resources */,
+				025D111919CF5521000B8252 /* laser.wav in Resources */,
+				02DE9B6619CF356900268F4D /* spark.png in Resources */,
 				02E2EA7919CBCFA5002168EB /* Images.xcassets in Resources */,
 				02E2EA7719CBCFA5002168EB /* Spaceship.png in Resources */,
 				02E2EA6F19CBCFA5002168EB /* Main.storyboard in Resources */,

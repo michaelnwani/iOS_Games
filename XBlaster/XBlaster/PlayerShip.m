@@ -1,4 +1,5 @@
 #import "PlayerShip.h"
+#import "MyScene.h"
 
 @implementation PlayerShip
 
@@ -9,6 +10,11 @@
         self.health = 100;
         
         [self configureCollisionBody];
+        
+        SKEmitterNode *engineEmitter = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"engine" ofType:@"sks"]];
+        engineEmitter.position = CGPointMake(1, -4);
+        engineEmitter.name = @"engineEmitter";
+        [self addChild:engineEmitter];
     }
     return self;
 }
@@ -71,9 +77,21 @@
 
 - (void)collidedWith:(SKPhysicsBody *)body contact:(SKPhysicsContact*)contact
 {
+    MyScene *scene = (MyScene *)self.scene;
+    [scene playExplodeSound];
+    
     self.health -= 5;
     if (self.health < 0)
         self.health = 0;
 }
 
+-(void)update:(CFTimeInterval)delta
+{
+    SKEmitterNode *emitter = (SKEmitterNode *)[self childNodeWithName:@"engineEmitter"];
+    MyScene *scene = (MyScene *)self.scene;
+    if (!emitter.targetNode)
+    {
+        emitter.targetNode = [scene particleLayerNode];
+    }
+}
 @end

@@ -40,7 +40,7 @@
 - (void)updateWaypoint:(CGPoint)waypoint;
 
 /**
- Used to update th steering AI logic which calculates a new position fot the entity which moves it twards its current waypoint
+ Used to update th steering AI logic which calculates a new position for the entity which moves it towards its current waypoint
  @param delta the time which has passed since the last update
  */
 - (void)update:(CFTimeInterval)delta;

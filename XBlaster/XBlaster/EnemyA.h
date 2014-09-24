@@ -15,6 +15,7 @@
     int         _score;
     int         _damageTakenPerShot;
     NSString    *_healthMeterText;
+    SKEmitterNode *_deathEmitter;
 }
 
 @property (strong,nonatomic) AISteering *aiSteering;
