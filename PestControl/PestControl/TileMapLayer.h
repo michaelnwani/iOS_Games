@@ -7,6 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "MyScene.h"
+
+@class Bug;
 
 @interface TileMapLayer : SKNode
 
@@ -19,4 +22,10 @@
                          tileSize:(CGSize)tileSize
                              grid:(NSArray *)grid;
 
+-(BOOL)isValidTileCoord:(CGPoint)coord;
+-(CGPoint)pointForCoord:(CGPoint)coord;
+-(CGPoint)coordForPoint:(CGPoint)point;
+
+-(SKNode*)tileAtCoord:(CGPoint)coord;
+-(SKNode*)tileAtPoint:(CGPoint)point;
 @end

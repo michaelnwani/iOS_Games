@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E1443719D4C0C200ABC615 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E1443619D4C0C200ABC615 /* Player.m */; };
+		02E1443A19D4CB4800ABC615 /* Bug.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E1443919D4CB4800ABC615 /* Bug.m */; };
+		02E1443D19D4F15E00ABC615 /* AnimatingSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E1443C19D4F15E00ABC615 /* AnimatingSprite.m */; };
 		02E5000019D3ACA4002692F3 /* WaterDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E5FFC819D3ACA4002692F3 /* WaterDrop.png */; };
 		02E5000119D3ACA4002692F3 /* DrownFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02E5FFCA19D3ACA4002692F3 /* DrownFireBug.mp3 */; };
 		02E5000219D3ACA4002692F3 /* HitFireBug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02E5FFCB19D3ACA4002692F3 /* HitFireBug.mp3 */; };
@@ -92,6 +95,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E1443519D4C0C200ABC615 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		02E1443619D4C0C200ABC615 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		02E1443819D4CB4800ABC615 /* Bug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bug.h; sourceTree = "<group>"; };
+		02E1443919D4CB4800ABC615 /* Bug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bug.m; sourceTree = "<group>"; };
+		02E1443B19D4F15E00ABC615 /* AnimatingSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatingSprite.h; sourceTree = "<group>"; };
+		02E1443C19D4F15E00ABC615 /* AnimatingSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatingSprite.m; sourceTree = "<group>"; };
 		02E5002519D3B054002692F3 /* TileMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayer.h; sourceTree = "<group>"; };
 		02E5002619D3B054002692F3 /* TileMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayer.m; sourceTree = "<group>"; };
 		02E5FF6819D3ABD0002692F3 /* PestControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PestControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +260,12 @@
 				02E5FF8619D3ABD1002692F3 /* MyScene.m */,
 				02E5002519D3B054002692F3 /* TileMapLayer.h */,
 				02E5002619D3B054002692F3 /* TileMapLayer.m */,
+				02E1443519D4C0C200ABC615 /* Player.h */,
+				02E1443619D4C0C200ABC615 /* Player.m */,
+				02E1443819D4CB4800ABC615 /* Bug.h */,
+				02E1443919D4CB4800ABC615 /* Bug.m */,
+				02E1443B19D4F15E00ABC615 /* AnimatingSprite.h */,
+				02E1443C19D4F15E00ABC615 /* AnimatingSprite.m */,
 				02E5FF8A19D3ABD1002692F3 /* Images.xcassets */,
 				02E5FF7419D3ABD0002692F3 /* Supporting Files */,
 			);
@@ -555,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E1443A19D4CB4800ABC615 /* Bug.m in Sources */,
 				02E5FF8719D3ABD1002692F3 /* MyScene.m in Sources */,
 				02E5001719D3ACA4002692F3 /* SKTEffects.m in Sources */,
 				02E5FFB519D3ABFC002692F3 /* SKTAudio.m in Sources */,
@@ -565,8 +581,10 @@
 				02E5FFB619D3ABFC002692F3 /* SKTUtils.mm in Sources */,
 				02E5002419D3ACA4002692F3 /* TileMapLayerLoader.m in Sources */,
 				02E5FFB219D3ABFC002692F3 /* SKAction+SKTExtras.m in Sources */,
+				02E1443D19D4F15E00ABC615 /* AnimatingSprite.m in Sources */,
 				02E5FF7E19D3ABD0002692F3 /* AppDelegate.m in Sources */,
 				02E5FFB419D3ABFC002692F3 /* SKNode+SKTExtras.m in Sources */,
+				02E1443719D4C0C200ABC615 /* Player.m in Sources */,
 				02E5FF7A19D3ABD0002692F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,6 +792,7 @@
 				02E5FFA319D3ABD1002692F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02E5FFA419D3ABD1002692F3 /* Build configuration list for PBXNativeTarget "PestControlTests" */ = {
 			isa = XCConfigurationList;
@@ -782,6 +801,7 @@
 				02E5FFA619D3ABD1002692F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
