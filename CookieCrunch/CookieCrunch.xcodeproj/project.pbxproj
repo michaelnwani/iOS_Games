@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B79DCD1A69A09A00E20190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCC1A69A09A00E20190 /* Foundation.framework */; };
+		02B79DCF1A69A09A00E20190 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */; };
+		02B79DD11A69A09A00E20190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DD01A69A09A00E20190 /* UIKit.framework */; };
+		02B79DD31A69A09A00E20190 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DD21A69A09A00E20190 /* SpriteKit.framework */; };
+		02B79DD91A69A09A00E20190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02B79DD71A69A09A00E20190 /* InfoPlist.strings */; };
+		02B79DDB1A69A09A00E20190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79DDA1A69A09A00E20190 /* main.m */; };
+		02B79DDF1A69A09A00E20190 /* RWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79DDE1A69A09A00E20190 /* RWTAppDelegate.m */; };
+		02B79DE21A69A09A00E20190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B79DE01A69A09A00E20190 /* Main.storyboard */; };
+		02B79DE51A69A09A00E20190 /* RWTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79DE41A69A09A00E20190 /* RWTViewController.m */; };
+		02B79DE81A69A09A00E20190 /* RWTMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79DE71A69A09A00E20190 /* RWTMyScene.m */; };
+		02B79DEC1A69A09A00E20190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B79DEB1A69A09A00E20190 /* Images.xcassets */; };
+		02B79DF31A69A09A00E20190 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DF21A69A09A00E20190 /* XCTest.framework */; };
+		02B79DF41A69A09A00E20190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCC1A69A09A00E20190 /* Foundation.framework */; };
+		02B79DF51A69A09A00E20190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DD01A69A09A00E20190 /* UIKit.framework */; };
+		02B79DFD1A69A09A00E20190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02B79DFB1A69A09A00E20190 /* InfoPlist.strings */; };
+		02B79DFF1A69A09A00E20190 /* CookieCrunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79DFE1A69A09A00E20190 /* CookieCrunchTests.m */; };
+		02B79E091A69A15000E20190 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E081A69A15000E20190 /* Sprites.atlas */; };
+		02B79E0C1A69A3F200E20190 /* RWTCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79E0B1A69A3F200E20190 /* RWTCookie.m */; };
+		02B79E0F1A69A87400E20190 /* RWTLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79E0E1A69A87400E20190 /* RWTLevel.m */; };
+		02B79E161A69BF0D00E20190 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E111A69BF0D00E20190 /* Level_0.json */; };
+		02B79E171A69BF0D00E20190 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E121A69BF0D00E20190 /* Level_1.json */; };
+		02B79E181A69BF0D00E20190 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E131A69BF0D00E20190 /* Level_2.json */; };
+		02B79E191A69BF0D00E20190 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E141A69BF0D00E20190 /* Level_3.json */; };
+		02B79E1A1A69BF0D00E20190 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E151A69BF0D00E20190 /* Level_4.json */; };
+		02B79E1D1A69C05A00E20190 /* RWTTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79E1C1A69C05A00E20190 /* RWTTile.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02B79DF61A69A09A00E20190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02B79DC11A69A09A00E20190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02B79DC81A69A09A00E20190;
+			remoteInfo = CookieCrunch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B79DC91A69A09A00E20190 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B79DCC1A69A09A00E20190 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02B79DD01A69A09A00E20190 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02B79DD21A69A09A00E20190 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		02B79DD61A69A09A00E20190 /* CookieCrunch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CookieCrunch-Info.plist"; sourceTree = "<group>"; };
+		02B79DD81A69A09A00E20190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02B79DDA1A69A09A00E20190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02B79DDC1A69A09A00E20190 /* CookieCrunch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookieCrunch-Prefix.pch"; sourceTree = "<group>"; };
+		02B79DDD1A69A09A00E20190 /* RWTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTAppDelegate.h; sourceTree = "<group>"; };
+		02B79DDE1A69A09A00E20190 /* RWTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTAppDelegate.m; sourceTree = "<group>"; };
+		02B79DE11A69A09A00E20190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02B79DE31A69A09A00E20190 /* RWTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTViewController.h; sourceTree = "<group>"; };
+		02B79DE41A69A09A00E20190 /* RWTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTViewController.m; sourceTree = "<group>"; };
+		02B79DE61A69A09A00E20190 /* RWTMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTMyScene.h; sourceTree = "<group>"; };
+		02B79DE71A69A09A00E20190 /* RWTMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTMyScene.m; sourceTree = "<group>"; };
+		02B79DEB1A69A09A00E20190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02B79DF11A69A09A00E20190 /* CookieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B79DF21A69A09A00E20190 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		02B79DFA1A69A09A00E20190 /* CookieCrunchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CookieCrunchTests-Info.plist"; sourceTree = "<group>"; };
+		02B79DFC1A69A09A00E20190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02B79DFE1A69A09A00E20190 /* CookieCrunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookieCrunchTests.m; sourceTree = "<group>"; };
+		02B79E081A69A15000E20190 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		02B79E0A1A69A3F200E20190 /* RWTCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTCookie.h; sourceTree = "<group>"; };
+		02B79E0B1A69A3F200E20190 /* RWTCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTCookie.m; sourceTree = "<group>"; };
+		02B79E0D1A69A87400E20190 /* RWTLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTLevel.h; sourceTree = "<group>"; };
+		02B79E0E1A69A87400E20190 /* RWTLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTLevel.m; sourceTree = "<group>"; };
+		02B79E111A69BF0D00E20190 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		02B79E121A69BF0D00E20190 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		02B79E131A69BF0D00E20190 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		02B79E141A69BF0D00E20190 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		02B79E151A69BF0D00E20190 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		02B79E1B1A69C05A00E20190 /* RWTTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTTile.h; sourceTree = "<group>"; };
+		02B79E1C1A69C05A00E20190 /* RWTTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTTile.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02B79DC61A69A09A00E20190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79DCF1A69A09A00E20190 /* CoreGraphics.framework in Frameworks */,
+				02B79DD11A69A09A00E20190 /* UIKit.framework in Frameworks */,
+				02B79DD31A69A09A00E20190 /* SpriteKit.framework in Frameworks */,
+				02B79DCD1A69A09A00E20190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B79DEE1A69A09A00E20190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79DF31A69A09A00E20190 /* XCTest.framework in Frameworks */,
+				02B79DF51A69A09A00E20190 /* UIKit.framework in Frameworks */,
+				02B79DF41A69A09A00E20190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B79DC01A69A09A00E20190 = {
+			isa = PBXGroup;
+			children = (
+				02B79DD41A69A09A00E20190 /* CookieCrunch */,
+				02B79DF81A69A09A00E20190 /* CookieCrunchTests */,
+				02B79DCB1A69A09A00E20190 /* Frameworks */,
+				02B79DCA1A69A09A00E20190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02B79DCA1A69A09A00E20190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DC91A69A09A00E20190 /* CookieCrunch.app */,
+				02B79DF11A69A09A00E20190 /* CookieCrunchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02B79DCB1A69A09A00E20190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DCC1A69A09A00E20190 /* Foundation.framework */,
+				02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */,
+				02B79DD01A69A09A00E20190 /* UIKit.framework */,
+				02B79DD21A69A09A00E20190 /* SpriteKit.framework */,
+				02B79DF21A69A09A00E20190 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02B79DD41A69A09A00E20190 /* CookieCrunch */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DDD1A69A09A00E20190 /* RWTAppDelegate.h */,
+				02B79DDE1A69A09A00E20190 /* RWTAppDelegate.m */,
+				02B79DE01A69A09A00E20190 /* Main.storyboard */,
+				02B79DE31A69A09A00E20190 /* RWTViewController.h */,
+				02B79DE41A69A09A00E20190 /* RWTViewController.m */,
+				02B79DE61A69A09A00E20190 /* RWTMyScene.h */,
+				02B79DE71A69A09A00E20190 /* RWTMyScene.m */,
+				02B79E0A1A69A3F200E20190 /* RWTCookie.h */,
+				02B79E0B1A69A3F200E20190 /* RWTCookie.m */,
+				02B79E0D1A69A87400E20190 /* RWTLevel.h */,
+				02B79E0E1A69A87400E20190 /* RWTLevel.m */,
+				02B79E1B1A69C05A00E20190 /* RWTTile.h */,
+				02B79E1C1A69C05A00E20190 /* RWTTile.m */,
+				02B79E101A69BF0D00E20190 /* Levels */,
+				02B79E081A69A15000E20190 /* Sprites.atlas */,
+				02B79DEB1A69A09A00E20190 /* Images.xcassets */,
+				02B79DD51A69A09A00E20190 /* Supporting Files */,
+			);
+			path = CookieCrunch;
+			sourceTree = "<group>";
+		};
+		02B79DD51A69A09A00E20190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DD61A69A09A00E20190 /* CookieCrunch-Info.plist */,
+				02B79DD71A69A09A00E20190 /* InfoPlist.strings */,
+				02B79DDA1A69A09A00E20190 /* main.m */,
+				02B79DDC1A69A09A00E20190 /* CookieCrunch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02B79DF81A69A09A00E20190 /* CookieCrunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DFE1A69A09A00E20190 /* CookieCrunchTests.m */,
+				02B79DF91A69A09A00E20190 /* Supporting Files */,
+			);
+			path = CookieCrunchTests;
+			sourceTree = "<group>";
+		};
+		02B79DF91A69A09A00E20190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B79DFA1A69A09A00E20190 /* CookieCrunchTests-Info.plist */,
+				02B79DFB1A69A09A00E20190 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02B79E101A69BF0D00E20190 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				02B79E111A69BF0D00E20190 /* Level_0.json */,
+				02B79E121A69BF0D00E20190 /* Level_1.json */,
+				02B79E131A69BF0D00E20190 /* Level_2.json */,
+				02B79E141A69BF0D00E20190 /* Level_3.json */,
+				02B79E151A69BF0D00E20190 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02B79DC81A69A09A00E20190 /* CookieCrunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B79E021A69A09A00E20190 /* Build configuration list for PBXNativeTarget "CookieCrunch" */;
+			buildPhases = (
+				02B79DC51A69A09A00E20190 /* Sources */,
+				02B79DC61A69A09A00E20190 /* Frameworks */,
+				02B79DC71A69A09A00E20190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookieCrunch;
+			productName = CookieCrunch;
+			productReference = 02B79DC91A69A09A00E20190 /* CookieCrunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02B79DF01A69A09A00E20190 /* CookieCrunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B79E051A69A09A00E20190 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */;
+			buildPhases = (
+				02B79DED1A69A09A00E20190 /* Sources */,
+				02B79DEE1A69A09A00E20190 /* Frameworks */,
+				02B79DEF1A69A09A00E20190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02B79DF71A69A09A00E20190 /* PBXTargetDependency */,
+			);
+			name = CookieCrunchTests;
+			productName = CookieCrunchTests;
+			productReference = 02B79DF11A69A09A00E20190 /* CookieCrunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02B79DC11A69A09A00E20190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RWT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Michael Nwani";
+				TargetAttributes = {
+					02B79DF01A69A09A00E20190 = {
+						TestTargetID = 02B79DC81A69A09A00E20190;
+					};
+				};
+			};
+			buildConfigurationList = 02B79DC41A69A09A00E20190 /* Build configuration list for PBXProject "CookieCrunch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02B79DC01A69A09A00E20190;
+			productRefGroup = 02B79DCA1A69A09A00E20190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02B79DC81A69A09A00E20190 /* CookieCrunch */,
+				02B79DF01A69A09A00E20190 /* CookieCrunchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02B79DC71A69A09A00E20190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79DD91A69A09A00E20190 /* InfoPlist.strings in Resources */,
+				02B79E1A1A69BF0D00E20190 /* Level_4.json in Resources */,
+				02B79E181A69BF0D00E20190 /* Level_2.json in Resources */,
+				02B79E161A69BF0D00E20190 /* Level_0.json in Resources */,
+				02B79DEC1A69A09A00E20190 /* Images.xcassets in Resources */,
+				02B79DE21A69A09A00E20190 /* Main.storyboard in Resources */,
+				02B79E171A69BF0D00E20190 /* Level_1.json in Resources */,
+				02B79E191A69BF0D00E20190 /* Level_3.json in Resources */,
+				02B79E091A69A15000E20190 /* Sprites.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B79DEF1A69A09A00E20190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79DFD1A69A09A00E20190 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02B79DC51A69A09A00E20190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79E0F1A69A87400E20190 /* RWTLevel.m in Sources */,
+				02B79DE81A69A09A00E20190 /* RWTMyScene.m in Sources */,
+				02B79DE51A69A09A00E20190 /* RWTViewController.m in Sources */,
+				02B79DDF1A69A09A00E20190 /* RWTAppDelegate.m in Sources */,
+				02B79E1D1A69C05A00E20190 /* RWTTile.m in Sources */,
+				02B79E0C1A69A3F200E20190 /* RWTCookie.m in Sources */,
+				02B79DDB1A69A09A00E20190 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B79DED1A69A09A00E20190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B79DFF1A69A09A00E20190 /* CookieCrunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02B79DF71A69A09A00E20190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02B79DC81A69A09A00E20190 /* CookieCrunch */;
+			targetProxy = 02B79DF61A69A09A00E20190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02B79DD71A69A09A00E20190 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B79DD81A69A09A00E20190 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02B79DE01A69A09A00E20190 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B79DE11A69A09A00E20190 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02B79DFB1A69A09A00E20190 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B79DFC1A69A09A00E20190 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02B79E001A69A09A00E20190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02B79E011A69A09A00E20190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02B79E031A69A09A00E20190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CookieCrunch/CookieCrunch-Prefix.pch";
+				INFOPLIST_FILE = "CookieCrunch/CookieCrunch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02B79E041A69A09A00E20190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CookieCrunch/CookieCrunch-Prefix.pch";
+				INFOPLIST_FILE = "CookieCrunch/CookieCrunch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		02B79E061A69A09A00E20190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CookieCrunch/CookieCrunch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CookieCrunchTests/CookieCrunchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		02B79E071A69A09A00E20190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CookieCrunch/CookieCrunch-Prefix.pch";
+				INFOPLIST_FILE = "CookieCrunchTests/CookieCrunchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02B79DC41A69A09A00E20190 /* Build configuration list for PBXProject "CookieCrunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B79E001A69A09A00E20190 /* Debug */,
+				02B79E011A69A09A00E20190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02B79E021A69A09A00E20190 /* Build configuration list for PBXNativeTarget "CookieCrunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B79E031A69A09A00E20190 /* Debug */,
+				02B79E041A69A09A00E20190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02B79E051A69A09A00E20190 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B79E061A69A09A00E20190 /* Debug */,
+				02B79E071A69A09A00E20190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02B79DC11A69A09A00E20190 /* Project object */;
+}
