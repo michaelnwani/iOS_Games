@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020FBB9C1A6DBA82003642C1 /* RWTSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FBB9B1A6DBA82003642C1 /* RWTSwap.m */; };
 		02B79DCD1A69A09A00E20190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCC1A69A09A00E20190 /* Foundation.framework */; };
 		02B79DCF1A69A09A00E20190 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */; };
 		02B79DD11A69A09A00E20190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DD01A69A09A00E20190 /* UIKit.framework */; };
@@ -32,6 +33,12 @@
 		02B79E191A69BF0D00E20190 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E141A69BF0D00E20190 /* Level_3.json */; };
 		02B79E1A1A69BF0D00E20190 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B79E151A69BF0D00E20190 /* Level_4.json */; };
 		02B79E1D1A69C05A00E20190 /* RWTTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B79E1C1A69C05A00E20190 /* RWTTile.m */; };
+		02C6E8A41A6E07B00083FA35 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E89E1A6E07B00083FA35 /* Chomp.wav */; };
+		02C6E8A51A6E07B00083FA35 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E89F1A6E07B00083FA35 /* Drip.wav */; };
+		02C6E8A61A6E07B00083FA35 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A01A6E07B00083FA35 /* Error.wav */; };
+		02C6E8A71A6E07B00083FA35 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A11A6E07B00083FA35 /* Ka-Ching.wav */; };
+		02C6E8A81A6E07B00083FA35 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A21A6E07B00083FA35 /* Mining by Moonlight.mp3 */; };
+		02C6E8A91A6E07B00083FA35 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A31A6E07B00083FA35 /* Scrape.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020FBB9A1A6DBA82003642C1 /* RWTSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSwap.h; sourceTree = "<group>"; };
+		020FBB9B1A6DBA82003642C1 /* RWTSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSwap.m; sourceTree = "<group>"; };
 		02B79DC91A69A09A00E20190 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B79DCC1A69A09A00E20190 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +88,12 @@
 		02B79E151A69BF0D00E20190 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 		02B79E1B1A69C05A00E20190 /* RWTTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTTile.h; sourceTree = "<group>"; };
 		02B79E1C1A69C05A00E20190 /* RWTTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTTile.m; sourceTree = "<group>"; };
+		02C6E89E1A6E07B00083FA35 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		02C6E89F1A6E07B00083FA35 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		02C6E8A01A6E07B00083FA35 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		02C6E8A11A6E07B00083FA35 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		02C6E8A21A6E07B00083FA35 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		02C6E8A31A6E07B00083FA35 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +162,15 @@
 				02B79DE41A69A09A00E20190 /* RWTViewController.m */,
 				02B79DE61A69A09A00E20190 /* RWTMyScene.h */,
 				02B79DE71A69A09A00E20190 /* RWTMyScene.m */,
+				020FBB9A1A6DBA82003642C1 /* RWTSwap.h */,
+				020FBB9B1A6DBA82003642C1 /* RWTSwap.m */,
 				02B79E0A1A69A3F200E20190 /* RWTCookie.h */,
 				02B79E0B1A69A3F200E20190 /* RWTCookie.m */,
 				02B79E0D1A69A87400E20190 /* RWTLevel.h */,
 				02B79E0E1A69A87400E20190 /* RWTLevel.m */,
 				02B79E1B1A69C05A00E20190 /* RWTTile.h */,
 				02B79E1C1A69C05A00E20190 /* RWTTile.m */,
+				02C6E89D1A6E07B00083FA35 /* Sounds */,
 				02B79E101A69BF0D00E20190 /* Levels */,
 				02B79E081A69A15000E20190 /* Sprites.atlas */,
 				02B79DEB1A69A09A00E20190 /* Images.xcassets */,
@@ -200,6 +218,19 @@
 				02B79E151A69BF0D00E20190 /* Level_4.json */,
 			);
 			path = Levels;
+			sourceTree = "<group>";
+		};
+		02C6E89D1A6E07B00083FA35 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				02C6E89E1A6E07B00083FA35 /* Chomp.wav */,
+				02C6E89F1A6E07B00083FA35 /* Drip.wav */,
+				02C6E8A01A6E07B00083FA35 /* Error.wav */,
+				02C6E8A11A6E07B00083FA35 /* Ka-Ching.wav */,
+				02C6E8A21A6E07B00083FA35 /* Mining by Moonlight.mp3 */,
+				02C6E8A31A6E07B00083FA35 /* Scrape.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B79DD91A69A09A00E20190 /* InfoPlist.strings in Resources */,
+				02C6E8A51A6E07B00083FA35 /* Drip.wav in Resources */,
 				02B79E1A1A69BF0D00E20190 /* Level_4.json in Resources */,
+				02C6E8A61A6E07B00083FA35 /* Error.wav in Resources */,
 				02B79E181A69BF0D00E20190 /* Level_2.json in Resources */,
+				02C6E8A91A6E07B00083FA35 /* Scrape.wav in Resources */,
 				02B79E161A69BF0D00E20190 /* Level_0.json in Resources */,
+				02C6E8A41A6E07B00083FA35 /* Chomp.wav in Resources */,
+				02C6E8A81A6E07B00083FA35 /* Mining by Moonlight.mp3 in Resources */,
 				02B79DEC1A69A09A00E20190 /* Images.xcassets in Resources */,
+				02C6E8A71A6E07B00083FA35 /* Ka-Ching.wav in Resources */,
 				02B79DE21A69A09A00E20190 /* Main.storyboard in Resources */,
 				02B79E171A69BF0D00E20190 /* Level_1.json in Resources */,
 				02B79E191A69BF0D00E20190 /* Level_3.json in Resources */,
@@ -310,6 +347,7 @@
 				02B79DE81A69A09A00E20190 /* RWTMyScene.m in Sources */,
 				02B79DE51A69A09A00E20190 /* RWTViewController.m in Sources */,
 				02B79DDF1A69A09A00E20190 /* RWTAppDelegate.m in Sources */,
+				020FBB9C1A6DBA82003642C1 /* RWTSwap.m in Sources */,
 				02B79E1D1A69C05A00E20190 /* RWTTile.m in Sources */,
 				02B79E0C1A69A3F200E20190 /* RWTCookie.m in Sources */,
 				02B79DDB1A69A09A00E20190 /* main.m in Sources */,
@@ -519,6 +557,7 @@
 				02B79E041A69A09A00E20190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02B79E051A69A09A00E20190 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +566,7 @@
 				02B79E071A69A09A00E20190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
