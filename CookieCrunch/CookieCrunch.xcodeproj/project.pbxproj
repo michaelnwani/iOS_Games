@@ -39,6 +39,7 @@
 		02C6E8A71A6E07B00083FA35 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A11A6E07B00083FA35 /* Ka-Ching.wav */; };
 		02C6E8A81A6E07B00083FA35 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A21A6E07B00083FA35 /* Mining by Moonlight.mp3 */; };
 		02C6E8A91A6E07B00083FA35 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 02C6E8A31A6E07B00083FA35 /* Scrape.wav */; };
+		02F4B3A41A75C07D0055B4EA /* RWTChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F4B3A31A75C07D0055B4EA /* RWTChain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		02C6E8A11A6E07B00083FA35 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		02C6E8A21A6E07B00083FA35 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		02C6E8A31A6E07B00083FA35 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		02F4B3A21A75C07D0055B4EA /* RWTChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTChain.h; sourceTree = "<group>"; };
+		02F4B3A31A75C07D0055B4EA /* RWTChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTChain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				02B79E0E1A69A87400E20190 /* RWTLevel.m */,
 				02B79E1B1A69C05A00E20190 /* RWTTile.h */,
 				02B79E1C1A69C05A00E20190 /* RWTTile.m */,
+				02F4B3A21A75C07D0055B4EA /* RWTChain.h */,
+				02F4B3A31A75C07D0055B4EA /* RWTChain.m */,
 				02C6E89D1A6E07B00083FA35 /* Sounds */,
 				02B79E101A69BF0D00E20190 /* Levels */,
 				02B79E081A69A15000E20190 /* Sprites.atlas */,
@@ -348,6 +353,7 @@
 				02B79DE51A69A09A00E20190 /* RWTViewController.m in Sources */,
 				02B79DDF1A69A09A00E20190 /* RWTAppDelegate.m in Sources */,
 				020FBB9C1A6DBA82003642C1 /* RWTSwap.m in Sources */,
+				02F4B3A41A75C07D0055B4EA /* RWTChain.m in Sources */,
 				02B79E1D1A69C05A00E20190 /* RWTTile.m in Sources */,
 				02B79E0C1A69A3F200E20190 /* RWTCookie.m in Sources */,
 				02B79DDB1A69A09A00E20190 /* main.m in Sources */,

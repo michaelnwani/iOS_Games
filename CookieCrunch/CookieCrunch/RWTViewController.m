@@ -45,7 +45,7 @@
             [self.level performSwap:swap];
             [self.scene animateSwap:swap completion:^
              {
-                 self.view.userInteractionEnabled = YES;
+                 [self handleMatches];
              }];
         }
         else
@@ -100,5 +100,20 @@
 {
     NSSet *newCookies = [self.level shuffle];
     [self.scene addSpritesForCookies:newCookies];
+}
+
+-(void)handleMatches
+{
+    NSSet *chains = [self.level removeMatches];
+    
+    [self.scene animateMatchedCookies:chains completion:^{
+        NSArray *columns = [self.level fillHoles];
+        [self.scene animateFallingCookies:columns completion:^{
+            NSArray *columns = [self.level topUpCookies];
+            [self.scene animateNewCookies:columns completion:^{
+                self.view.userInteractionEnabled = YES;
+            }];
+        }];
+    }];
 }
 @end
