@@ -11,6 +11,7 @@
 @interface RWTLevel ()
 
 @property (strong, nonatomic) NSSet *possibleSwaps;
+@property (assign, nonatomic) NSUInteger comboMultiplier;
 
 @end
 
@@ -237,6 +238,9 @@
                 }
             }];
         }];
+        
+        self.targetScore = [dictionary[@"targetScore"] unsignedIntegerValue]; //return NSUInteger, not int
+        self.maximumMoves = [dictionary[@"moves"] unsignedIntegerValue];
     }
     
     return self;
@@ -353,6 +357,9 @@
     [self removeCookies:horizontalChains];
     [self removeCookies:verticalChains];
     
+    [self calculateScores:horizontalChains];
+    [self calculateScores:verticalChains];
+    
     return [horizontalChains setByAddingObjectsFromSet:verticalChains];
 }
 
@@ -449,6 +456,20 @@
         }
     }
     return columns;
+}
+
+-(void)calculateScores:(NSSet *)chains
+{
+    for (RWTChain *chain in chains)
+    {
+        chain.score = 60 * ([chain.cookies count] - 2) * self.comboMultiplier;
+        self.comboMultiplier++;
+    }
+}
+
+-(void)resetComboMultiplier
+{
+    self.comboMultiplier = 1;
 }
 @end
 

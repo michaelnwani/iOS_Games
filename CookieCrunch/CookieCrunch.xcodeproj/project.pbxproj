@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		020FBB9C1A6DBA82003642C1 /* RWTSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FBB9B1A6DBA82003642C1 /* RWTSwap.m */; };
+		021C760B1A77386800B354EE /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 021C760A1A77386800B354EE /* Grid.atlas */; };
 		02B79DCD1A69A09A00E20190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCC1A69A09A00E20190 /* Foundation.framework */; };
 		02B79DCF1A69A09A00E20190 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */; };
 		02B79DD11A69A09A00E20190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B79DD01A69A09A00E20190 /* UIKit.framework */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		020FBB9A1A6DBA82003642C1 /* RWTSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSwap.h; sourceTree = "<group>"; };
 		020FBB9B1A6DBA82003642C1 /* RWTSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSwap.m; sourceTree = "<group>"; };
+		021C760A1A77386800B354EE /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Grid.atlas; path = Levels/Grid.atlas; sourceTree = "<group>"; };
 		02B79DC91A69A09A00E20190 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B79DCC1A69A09A00E20190 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02B79DCE1A69A09A00E20190 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +177,7 @@
 				02B79E1C1A69C05A00E20190 /* RWTTile.m */,
 				02F4B3A21A75C07D0055B4EA /* RWTChain.h */,
 				02F4B3A31A75C07D0055B4EA /* RWTChain.m */,
+				021C760A1A77386800B354EE /* Grid.atlas */,
 				02C6E89D1A6E07B00083FA35 /* Sounds */,
 				02B79E101A69BF0D00E20190 /* Levels */,
 				02B79E081A69A15000E20190 /* Sprites.atlas */,
@@ -318,6 +321,7 @@
 				02B79DD91A69A09A00E20190 /* InfoPlist.strings in Resources */,
 				02C6E8A51A6E07B00083FA35 /* Drip.wav in Resources */,
 				02B79E1A1A69BF0D00E20190 /* Level_4.json in Resources */,
+				021C760B1A77386800B354EE /* Grid.atlas in Resources */,
 				02C6E8A61A6E07B00083FA35 /* Error.wav in Resources */,
 				02B79E181A69BF0D00E20190 /* Level_2.json in Resources */,
 				02C6E8A91A6E07B00083FA35 /* Scrape.wav in Resources */,
